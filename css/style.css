@@ -1,0 +1,128 @@
+* {margin: 0; padding: 0;}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#aside{
+    width: 200px;
+}
+#aside .logo {
+    width: 100%;
+    height: 150px;
+    background-color:#ffffff;
+}
+#aside .nav {
+    width: 100%;
+    height: 650px;
+    background-color:#ffffff;
+}
+#main {
+    width: calc(100% - 200px);
+}
+#slider {
+    width: 100%;
+    height: 800px;
+    overflow-y: scroll; /*슬라이더 공간 높이 800px에서 스크롤로 볼 수 있음*/
+    background-color:#e2e7e4;
+
+}
+.image-box.image-row {
+  display: flex;
+  flex-wrap: nowrap;       /* 줄바꿈 없음 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 10px;                   /* 붙이기 */
+  padding: 30px;
+}
+
+.image-box.image-row img {
+  flex: 1 1 auto;          /* 자동 크기 조절 */
+  max-width: 50%;          /* 한 줄에 두 장 */
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+#footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    
+}
+#footer .foot1 {
+    width: 200px;
+    height: 120px;
+    background-color: #ffffff;
+}
+#footer .foot2 {
+    width: calc(100% - 200px);
+
+}
+#footer .foot2 .foot2-1 {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+#footer .foot2 .foot2-2 {
+    width: 100%;
+    height: 60px;
+    background-color:#ffffff;
+}
+
+/*nav*/
+/*메뉴*/
+.nav {
+
+}
+.nav > ul {
+    text-align: center;
+
+}
+.nav > ul > li {
+    position: relative;
+
+}
+.nav > ul > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color:darkgrey;
+
+}
+.nav > ul > li > a:hover {
+     background-color:#f1a862;
+
+}
+
+/*서브메뉴*/
+.nav > ul > li > ul {
+    display: none;
+    text-align: center;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    width: 200px;
+    background-color:#f1a862;
+
+}
+.nav > ul > li > ul > li {
+    list-style: none;
+
+}
+.nav > ul > li > ul > li > a {
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+
+}
+.nav > ul > li > ul > li > a:hover {
+    
+    background-color: coral;
+
+}
