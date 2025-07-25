@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>방문 감사합니다.</title>
+        <link rel="stylesheet" href="css/style_aside.css">
+       
+    </head>
+
+    <body>
+        <div id="wrap">
+            <aside id="aside">
+                <h1 class="logo"><a href="main.html"><img src="images/logo_01.png"></a></h1>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">디자인</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-2</a></li>
+                                <li><a href="#">서브메뉴3-3</a></li>
+                                <li><a href="#">서브메뉴3-4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">디지털 드로잉</a>
+                            <ul class="submenu">
+                                <li><a href="#">프로크리에이트</a></li>
+                                <li><a href="#">일러스트레이터</a></li>
+                                <li><a href="#">포토샵</a></li>
+                                <li><a href="#">서브메뉴1-4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">라쿠텐 번역</a>
+                            <ul class="submenu">
+                                <li><a href="matcha.html">고쿠고쿠 말차</a></li>
+                                <li><a href="#">카린토</a></li>
+                                <li><a href="#">서브메뉴1-3</a></li>
+                                <li><a href="#">서브메뉴1-4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">프로필</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-2</a></li>
+                                <li><a href="#">서브메뉴4-3</a></li>
+                                <li><a href="#">서브메뉴4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <article id="slider">
+            
+                
+            </article>
+          
+
+
+            
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script>
+                $(function(){
+                    $(".nav > ul > li").mouseover(function(){
+                        $(this).find(".submenu").stop().slideDown();
+                    });
+                    $(".nav > ul > li").mouseout(function(){
+                        $(this).find(".submenu").stop().slideUp();
+                    });
+                });
+            </script> 
+
+    </body>
+</html>

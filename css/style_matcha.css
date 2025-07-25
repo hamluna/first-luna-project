@@ -1,0 +1,64 @@
+* {margin: 0; padding: 0;}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#aside{
+   width: 200px;
+   height: 800px;
+
+}
+
+
+#slider {
+   /* width: calc(100% - 200px);
+    height: 800px;
+    overflow-y: scroll;
+    background-color:#e2e7e4; */
+
+    
+
+    width: calc(100% - 200px);
+    height: 800px;
+    overflow-y: scroll; /*슬라이더 공간 높이 800px에서 스크롤로 볼 수 있음*/
+    background-color:#e2e7e4;
+
+    
+
+}
+.image-box.image-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;       /* 줄바꿈 없음 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 10px;                   /* 붙이기 */
+  padding: 30px;
+
+}
+
+.image-box.image-row img {
+   
+  flex: 1 1 auto;          /* 자동 크기 조절 */
+  max-width: 50%;           /*한 줄에 두 장 */
+  height: auto;
+  object-fit: cover;
+  display: block;
+  
+}
+#footer {
+    width: 100%;
+    height: 120px;
+   
+    
+}
+
+
+

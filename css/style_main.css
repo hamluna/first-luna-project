@@ -1,0 +1,64 @@
+* {margin: 0; padding: 0;}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#aside{
+   width: 200px;
+   height: 800px;
+
+}
+
+
+#slider {
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 200px);
+    height: 800px;
+    overflow-y: scroll; /*슬라이더 공간 높이 800px에서 스크롤로 볼 수 있음*/
+    
+
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.slider-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.5;
+  
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  
+
+ 
+}
+
+
+.slider-text p {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+}
+
+
+
+
+
