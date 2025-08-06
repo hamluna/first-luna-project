@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>카린토</title>
+        <link rel="stylesheet" href="css/style_karinto.css">
+         <link rel="stylesheet" href="css/style_footer.css">
+
+        
+    </head>
+        
+    <body>
+        <div id="wrap">
+            <!--헤더 고정-->
+           <div id="header">
+                <script>
+                    fetch('aside.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('aside').innerHTML = data;
+                    });
+                </script>
+            </div>
+
+            <aside id="aside">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+
+            </aside>
+
+
+            <article id="slider">
+                <div class="image-box image-row">
+                    <img src="images/karinto_01_1.webp" alt="1">
+                    <img src="images/karinto_01_2.jpg" alt="1-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_02_1.webp" alt="2">
+                    <img src="images/karinto_02_2.jpg" alt="2-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_03_1.webp" alt="1">
+                    <img src="images/karinto_03_2.jpg" alt="1-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_04_1.webp" alt="2">
+                    <img src="images/karinto_04_2.jpg" alt="2-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_05_1.webp" alt="1">
+                    <img src="images/karinto_05_2.jpg" alt="1-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_06_1.webp" alt="2">
+                    <img src="images/karinto_06_2.jpg" alt="2-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_07_1.webp" alt="1">
+                    <img src="images/karinto_07_2.jpg" alt="1-1">
+                </div>
+
+                <div class="image-box image-row">
+                    <img src="images/karinto_08_1.webp" alt="2">
+                    <img src="images/karinto_08_2.jpg" alt="2-1">
+                </div>
+            </article>
+
+
+            <footer id="footer">
+
+            </footer>
+
+            <script>
+            fetch('footer.html')
+                .then(res => res.text())
+                .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+
+   
+        </div>
+
+  
+            <!--aside에 실행되는 자바스크립트 애니 작동시키기-->                 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="script/menu_ani.js"></script>
+                <script>
+                    fetch('aside.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('aside').innerHTML = data;
+                    activateMenu(); // 불러온 뒤 작동시킴
+                    });
+                </script>
+
+
+            
+            
+    </body>
+</html>

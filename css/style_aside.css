@@ -62,7 +62,7 @@ img {
 
 }
 .nav > ul > li > a:hover {
-     background-color:#f1a862;
+     background-color:#91adad;
 
 }
 
@@ -74,7 +74,7 @@ img {
     right: -200px;
     top: 0;
     width: 200px;
-    background-color:#f1a862;
+    background-color:#91adad;
 
 }
 .nav > ul > li > ul > li {
@@ -90,6 +90,6 @@ img {
 }
 .nav > ul > li > ul > li > a:hover {
     
-    background-color: coral;
+    background-color: #4a5858;
 
 }
