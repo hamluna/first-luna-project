@@ -1,0 +1,52 @@
+* {margin: 0; padding: 0;}
+
+#wrap {
+
+    display: flex;
+    justify-content: center;
+}
+#header {
+    position: absolute;
+    justify-content: center;
+}
+
+#slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.image-box.image-row {
+
+  width: 1190px;
+  display: flex;
+
+  justify-content: center; /*가운데 정렬*/
+  gap: 10px;  /*붙이기 */
+
+
+}
+
+
+.image-box.image-row:first-of-type {
+  margin-top: 150px;
+}
+
+.image-box.image-row:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.image-box.image-row img {
+
+
+  max-width: 50%;           /*한 줄에 두 장 */
+
+
+
+  
+}
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이모티콘</title>
+        <link rel="stylesheet" href="css/style_emoticon.css">
+        <link rel="stylesheet" href="css/style_header.css">
+    
+
+        
+    </head>
+        
+    <body>
+        <div id="wrap">
+            <!--헤더 고정-->
+           <div id="header">
+                <script>
+                    fetch('header.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    });
+                </script>
+            </div>
+
+
+
+
+            <article id="slider">
+
+                
+            <div class="image-box">
+                <div class="image-box1">
+                    <p>│ 이모티콘_01</p>
+                        </div>
+                            <img src="images/emoticon01.png" alt="1">
+                        </div>
+                    
+ 
+            </article>
+        </div>
+
+  
+            <!--header에 실행되는 자바스크립트 애니 작동시키기-->                 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="script/menu_ani.js"></script>
+                <script>
+                    fetch('header.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    activateMenu(); // 불러온 뒤 작동시킴
+                    });
+                </script>
+
+
+            
+            
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>방문 감사합니다.</title>
+        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="css/style_header.css">
+
+        <script src="script/jquery-1.12.3.js"></script>
+        <script src="script/menu_ani.js"></script>
+  
+
+
+    </head>
+
+    <body>
+        <header>
+            <div id="header">
+                <!--헤더고정-->
+                
+                        <script>
+                            fetch('header.html')
+                            .then(res => res.text())
+                            .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                            });
+                        </script>
+            </div>
+        </header>
+
+        <div id="slide">
+            <div class="slide-img">
+                <img src="images/main01_2.jpg">
+            </div>
+            <div class="slide-text">
+                <p>"안녕하세요. 방문을 환영합니다.<br>
+                제가 지원한 분야와 관련된 카테고리를<br>
+                확인해 주시기 바랍니다.<br>
+                <br>
+                2025년 7월부터 꾸준히 업데이트 중입니다."<br>
+            </div>
+        </div>
+
+
+        <!--header에 실행되는 자바스크립트 애니 작동시키기-->                 
+               
+                <script src="script/menu_ani.js"></script>
+                <script>
+                    fetch('header.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    activateMenu(); // 불러온 뒤 작동시킴
+                    });
+                </script>
+    </body>
+</html>
