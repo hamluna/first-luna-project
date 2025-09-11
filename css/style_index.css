@@ -1,0 +1,26 @@
+*{margin:0; padding:0;}
+
+#slide {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+
+}
+.slide-img img {
+   
+    opacity: 0.5;
+    width: 1200px;
+
+}
+.slide-text {
+    position: absolute;
+    top: 30%;
+    
+}
+.slide-text p {
+    font-size: 25px;
+
+    color: #fff;
+    text-align: center;
+}
