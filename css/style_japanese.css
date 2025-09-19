@@ -14,8 +14,48 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.image-box {
+  width: 1200px;
+  
+  margin-top: 150px;
+
+  
+
+}
+.image-box1 {
+ 
+    width: 1200px;
+    height: 100px;
+    background-color: #4a5858;
+   
 
 
+}
+.image-box1 p {
+    
+   text-decoration: none; 
+    padding: 35px 40px;
+    color:#fff;
+    font-size: 20px;
+    
+}
+
+.image-box2 {
+ 
+    width: 1200px;
+    height: 50px;
+    background-color: #b8c9c9;
+
+
+}
+.image-box2 p {
+   text-decoration: none; 
+   text-align: center;
+    padding: 10px 10px;
+    color:#4a5858;
+    font-size: 20px;
+    
+}
 
 .image-box.image-row {
 
@@ -28,7 +68,6 @@
 
 }
 
-
 .image-box.image-row:first-of-type {
   margin-top: 150px;
 }
@@ -36,16 +75,15 @@
 .image-box.image-row:not(:first-of-type) {
   margin-top: 0;
 }
-
 .image-box.image-row img {
-
-
   max-width: 50%;           /*한 줄에 두 장 */
 
 
 
   
 }
+
+
 
 /*맨 위로 버튼*/
 #topBtn {
@@ -67,8 +105,7 @@
 }
 
 #topBtn:hover {
-  background-color: #555;
+  background-color: #979797;
 }
-
 
 
