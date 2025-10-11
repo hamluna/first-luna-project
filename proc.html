@@ -73,7 +73,35 @@
 
    
         </div>
+<!-- 동동 뜨는 링크 아이콘 2개 -->
+            <div class="floating-icons">
+            <!--<a href="#" class="fi-btn" aria-label="유튜브" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png" title="유튜브"></a>-->
+            <a href="https://www.crowdpic.net/@luna" class="fi-btn" aria-label="스톡이미지" target="_blank" rel="noopener noreferrer"><img src="images/stockimage.png" title="스톡이미지"></a>
+            
+            </div>
 
+            <style>
+            html { scroll-behavior: smooth; }
+
+            /* 스크롤해도 고정 */
+            .floating-icons{
+                position: fixed;      /* 핵심 */
+                right: 20px;          /* 화면 오른쪽에서 24px */
+                bottom: 130px;         /* 화면 아래에서 24px (원하면 top:50%로 바꿔 세로 중앙) */
+                display: grid;
+                gap: 12px;
+                z-index: 9999;
+            }
+
+            .fi-btn{
+
+            }
+
+            @media (max-width: 768px){
+                .floating-icons{ right: 12px; bottom: 12px; }
+                .fi-btn{ width: 40px; height: 40px; }
+            }
+            </style>
   
             <!--header에 실행되는 자바스크립트 애니 작동시키기-->                 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
