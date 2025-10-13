@@ -1,37 +1,6 @@
 *{margin:0; padding:0;}
 
 #slide {
-  position: relative;
-  display: block;      /* flex 불필요: 이미지 100%로 맞추면 중앙 문제 해결됨 */
-  width: 100%;
-}
-
-.slide-img {
-  width: 100%;
-  max-width: 1200px;   /* 데스크탑 상한선 */
-  margin: 0 auto;      /* 중앙 정렬 */
-}
-
-.slide-img img {
-  width: 100%;         /* ★ 핵심: 1200px 고정폭 → 100% */
-  opacity: 0.5;
-}
-
-.slide-text {
-  position: absolute;
-  inset: 0;            /* 상하좌우 0으로 전체 덮고 */
-  display: grid;       /* 가운데 정렬 */
-  place-items: center; /* 수직/수평 중앙 */
-  pointer-events: none;
-}
-
-.slide-text p {
-  font-size: 25px;
-  color: #fff;
-  text-align: center;
-  margin: 0 16px;      /* 모바일 안전 여백 */
-}
-/*#slide {
     position: relative;
     display: flex;
 
@@ -54,4 +23,4 @@
 
     color: #fff;
     text-align: center;
-} */
+} 
