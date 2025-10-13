@@ -21,14 +21,19 @@
         <header>
             <div id="header">
                 <!--헤더고정-->
+                <!--header에 실행되는 자바스크립트 애니 작동시키기-->                 
+               
+                <script src="script/menu_ani.js"></script>
+                <script>
+                    fetch('header.html')
+                    .then(res => res.text())
+                    .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    activateMenu(); // 불러온 뒤 작동시킴
+                    });
+                </script>
                 
-                        <script>
-                            fetch('header.html')
-                            .then(res => res.text())
-                            .then(data => {
-                            document.getElementById('header').innerHTML = data;
-                            });
-                        </script>
+
             </div>
         </header>
 
@@ -78,16 +83,6 @@
 
 
 
-<!--header에 실행되는 자바스크립트 애니 작동시키기-->                 
-               
-                <script src="script/menu_ani.js"></script>
-                <script>
-                    fetch('header.html')
-                    .then(res => res.text())
-                    .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                    activateMenu(); // 불러온 뒤 작동시킴
-                    });
-                </script>
+
     </body>
 </html>
