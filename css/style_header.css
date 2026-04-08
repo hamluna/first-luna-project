@@ -1,6 +1,11 @@
 *{
   margin:0; 
-  padding:0;}
+  padding:0;
+}
+
+
+
+
 header {
     display: flex;
     justify-content: center;
@@ -9,9 +14,9 @@ header {
 #header {
 
     display: flex;
-
     width: 1200px;
     height: 150px;
+
 }
 /*.logo {
     display: flex;
@@ -23,7 +28,7 @@ header {
     height: 150px;
 }
 .menu {
-   float: right;
+    float: right;
     width: 1000px;
     height: 150px;
     background-color:#91adad;
@@ -36,15 +41,16 @@ header {
     list-style: none;
     margin-top: 55px;
     margin-right: 30px;
-
-    
-
 }
 .navi > li {
     float: left;
     
     
 }
+
+
+
+
 .navi > li > a {
     text-decoration: none;
     display: block;
@@ -87,3 +93,5 @@ header {
     color: #fff;
     background-color: #333;
 }
+
+
